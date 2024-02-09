@@ -6,8 +6,6 @@ import os
 app = Flask(__name__)
 Bootstrap5(app)
 
-EMAIL_PASSWORD='uqwjawnamvtmqnuy'
-
 @app.route('/')
 def home():
     return render_template("index.html")
@@ -41,9 +39,9 @@ def contact():
 def sendemail(name, email, phone, message):
     with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
-            connection.login(user='pythontemp69@gmail.com', password=EMAIL_PASSWORD)
+            connection.login(user=os.environ.get("EMAIL_SEND"), password=os.environ.get("EMAIL_PASSWORD"))
             connection.sendmail(
-                from_addr='pythontemp69@gmail.com',
+                from_addr=os.environ.get("EMAIL_SEND"),
                 to_addrs='messikazi2121@gmail.com',
                 msg=f"Subject: New Message \n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
             )
