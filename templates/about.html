@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  {% block styles %}
+  <!-- Load Bootstrap-Flask CSS here -->
+  {{ bootstrap.load_css() }}
+  <link href='/static/css/styles.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  {% endblock %}
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="hero">
+        <!-- Content for the hero section -->
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+              <h1 class="display-5 fw-bold text-white">About Me</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4 text-white">I am Fahim Kazi, a dedicated second-year Computer Science student with a passion for full-stack development.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+          <!-- Carousel Column -->
+          <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <!-- Carousel indicators and items here -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/assests/img/me.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/assests/img/me_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/assests/img/me_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/assests/img/me_4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Content Column for the About Me text -->
+          <div class="text col-md-6">
+            <h1>Summary</h1>
+            <p>As a second-year Computer Science student, I am deeply engaged in honing my skills in full stack web development. With a strong foundation in both front-end and back-end technologies, I am passionate about designing and developing seamless, scalable web applications. My academic pursuits and project work reflect a commitment to technical excellence and a keen interest in the latest web technologies. I am actively seeking opportunities to collaborate on projects that challenge my problem-solving abilities and expand my programming expertise.</p>
+            <h2>Languages</h2>
+            <ul class='skill'>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>C</li>
+                <li>SQL</li>
+              <!-- Add more skills as needed -->
+            </ul>
+            
+            <h2>Frameworks/Libraries</h2>
+            <ul class='frame'>
+                <li>Flask</li>
+                <li>Selenium</li>
+                <li>BeautifulSoup</li>
+                <li>React.JS</li>
+                <li>Node.JS</li>
+                <li>Express.JS</li>
+                <li>Requests</li>
+                <li>Git</li>
+                <li>REST APIs</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>SQLite</li>
+                <li>SQLAlchemy</li>
+                <li>PostgreSQL</li>
+              <!-- Add more frameworks/libraries as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

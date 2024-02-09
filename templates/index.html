@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fahim's Portfolio</title>
+  {% block styles %}
+  <!-- Load Bootstrap-Flask CSS here -->
+  {{ bootstrap.load_css() }}
+  <link href='/static/css/styles.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  {% endblock %}
+</head>
+<body>
+
+  <header class="hero-section">
+    {% include 'header.html' %}
+    <div class="hero-content text-center">
+      <h1>I am Fahim Kazi</h1>
+      <h2 class="tagline">Computer Science Student</h2>
+      <!-- Additional content if needed -->
+    </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
