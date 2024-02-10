@@ -2,9 +2,11 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
 import smtplib
 import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 Bootstrap5(app)
+load_dotenv()
 
 @app.route('/')
 def home():

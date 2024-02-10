@@ -22,8 +22,11 @@
         <div class="contact container">
           <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-md-6">
-              <h2 class="display-5 fw-normal text-black">Send Me a Message</h2>
-
+              {% if sent: %}
+                <h2 class="display-5 fw-normal text-black">Message Sent!</h2>
+              {% else: %}
+                <h2 class="display-5 fw-normal text-black">Send Me a Message</h2>
+              {% endif %}
               <form
                 id="contactForm"
                 name="sentMessage"
