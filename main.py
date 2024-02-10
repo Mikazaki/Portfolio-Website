@@ -39,7 +39,7 @@ def contact():
     return render_template("contact.html", sent = False)
 
 def sendemail(name, email, phone, message):
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
             connection.login(user=os.environ.get("EMAIL_SEND"), password=os.environ.get("EMAIL_PASSWORD"))
             connection.sendmail(
