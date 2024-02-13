@@ -93,95 +93,6 @@ html, body {
   }
   
 
-#carouselExampleIndicators {
-  aspect-ratio: 3/4;
-  
-}
-
-#carouselExampleIndicators .carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  margin-top: 1rem;
-}
-
-.slide {
-  height: 600px;
-  width: auto;
-}
-
-
-.carousel-item {
-  text-align: center;
-}
-
-.text {
-  margin-left: -180px;
-}
-
-.text, .card-text, .context {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-.text h1, .text h2 {
-  color: #0056b3;
-}
-
-.text h1, .context h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.text h2{
-  font-size: 1.75rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.text p, .card-text, .context p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.skill, .frame {
-  list-style: none;
-  padding: 0;
-}
-
-.skill li, .frame li {
-  background: #e7f1ff;
-  display: inline-block;
-  margin: 0.25rem;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-size: 0.85rem;
-}
-
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icon {
-  margin: 0 10px;
-  color: #505050;
-  font-size: 30px;
-  margin-top: 41%;
-  justify-content: center;
-}
-
-.text-muted {
-  color: black;
-  font-size: 0.875rem;
-  margin-top: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .social-icon:hover {
   color: #007bff;
 }
@@ -290,7 +201,7 @@ html, body {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 767.98px) { 
+@media (min-width: 767.98px) and (max-width: 1399px) { 
   #carouselExampleIndicators {
     aspect-ratio: 3/4;
     height: auto;
@@ -383,101 +294,7 @@ html, body {
 }
 
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 1399px){ 
-  #carouselExampleIndicators {
-    aspect-ratio: 3/4;
-    
-  }
-  
-  #carouselExampleIndicators .carousel-item img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-  }
-  
-  .slide {
-    height: auto;
-    width: auto;
-  }
-  
-  
-  .carousel-item {
-    text-align: center;
-  }
-  
-  .text {
-    margin-left: auto;
-  }
-  
-  .text, .card-text, .context {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .text h1, .text h2 {
-    color: #0056b3;
-  }
-  
-  .text h1, .context h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .text h2{
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .text p, .card-text, .context p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .skill, .frame {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skill li, .frame li {
-    background: #e7f1ff;
-    display: inline-block;
-    margin: 0.25rem;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.85rem;
-  }
-  
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-icon {
-    margin: 0 10px;
-    color: #505050;
-    font-size: 30px;
-    margin-top: 41%;
-    justify-content: center;
-  }
-  
-  .text-muted {
-    color: black;
-    font-size: 0.875rem;
-    margin-top: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
   #carouselExampleIndicators {
     aspect-ratio: 3/4;
     
@@ -566,5 +383,4 @@ html, body {
     font-weight: bold;
     text-align: center;
   }
-  
 }
